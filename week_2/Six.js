@@ -11,7 +11,7 @@ function read_file(path_to_file) {
 
 function filter_chars_and_normalize(str_data) {
   // Takes a string and returns a copy with all nonalphanumeric chars replaced by white space
-  return str_data.replaceAll(/[\W_]+/ig, ' ').toLowerCase();
+  return str_data.replace(/[\W_]+/ig, ' ').toLowerCase();
 }
 
 function scan(str_data) {
