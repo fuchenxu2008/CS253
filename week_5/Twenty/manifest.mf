@@ -1,2 +1,3 @@
 Manifest-version: 1.0
-Main-Class: week_5.Twenty.Twenty
+Class-Path: .
+Main-Class: Twenty

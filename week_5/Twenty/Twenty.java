@@ -16,7 +16,6 @@ public class Twenty {
       prop.load(fis);
 
       String wordsName = prop.getProperty("words");
-      System.out.println(wordsName);
       String frequenciesName = prop.getProperty("frequencies");
       String appPath = prop.getProperty("appPath");
 
