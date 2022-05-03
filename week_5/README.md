@@ -10,3 +10,5 @@
   - `jar cfm framework.jar manifest.mf Twenty.class config.properties`
   - `java -cp framework.jar Twenty ../../pride-and-prejudice.txt`
 4. For changing to app2, open `config.properties` file, and comment the first section and uncomment the second section
+  - Then execute `jar cfm framework.jar manifest.mf Twenty.class config.properties`
+  - `java -cp framework.jar Twenty ../../pride-and-prejudice.txt`
