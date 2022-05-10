@@ -1,2 +1,2 @@
 language = "java10"
-run = "javac *.java"
+run = "cd week_6 && echo '\nRunning 29:\n' && javac TwentyNine.java && java TwentyNine ../pride-and-prejudice.txt && echo '\nRunning 30:\n' && javac Thirty.java && java Thirty ../pride-and-prejudice.txt && echo '\nRunning 32:\n' && javac ThirtyTwo.java && java ThirtyTwo ../pride-and-prejudice.txt && rm *.class"
