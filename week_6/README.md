@@ -1,5 +1,9 @@
 # How to run
 
+## Either
+Click "Run" button.
+
+## Or
 1. Open the shell/terminal and sit at root directory.
 2. Enter week_6 directory via `cd week_6`
 2. For 29, Execute `javac TwentyNine.java && java TwentyNine ../pride-and-prejudice.txt`
