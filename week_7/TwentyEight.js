@@ -41,9 +41,10 @@ function* all_words(filename) {
 
 function* non_stop_words(filename) {
   const stopwords = new Set(fs.readFileSync(path.resolve(__dirname, '../stop_words.txt'), 'utf-8').split(','))
-  for (let w of all_words(filename))
-    if (!stopwords.has(w))
-      yield w
+  for (let ws of all_words_from_lines(filename))
+    for (let w of ws)
+      if (!stopwords.has(w))
+        yield w
 }
 
 
@@ -75,10 +76,10 @@ function* lines(filename) {
   }
 }
 
-function* all_words2(filename) {
+function* all_words_from_lines(filename) {
   const pattern = /[a-zA-Z]{2,}/g
-  const words = fs.readFileSync(filename, UTF8).match(pattern).map(word => word.toLowerCase())
-  for (let word of words) {
-      yield word
+  for (let line of lines(filename)) {
+    const words = (line.match(pattern) || []).map(word => word.toLowerCase())
+    yield words;
   }
 }
