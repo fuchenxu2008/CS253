@@ -57,7 +57,7 @@ const printEntry = ([k, v]) => console.log(`${k} - ${v}`);
  */
 const words = fs
   .readFileSync(path.resolve(__dirname, `../${process.argv[2]}`), 'utf8')
-  .replace(/[^a-zA-z]/g, ' ')
+  .replace(/[^a-zA-Z]/g, ' ')
   .split(/\s+/);
 
 const stopWords = new Set(
