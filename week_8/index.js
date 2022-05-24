@@ -2,38 +2,38 @@ const fs = require('fs');
 const path = require('path');
 
 const LeetMapping = {
-  a: 'a',
-  b: '8',
-  c: '<',
-  d: '|)',
-  e: '3',
-  f: '|=',
-  g: '[',
-  h: '#',
-  i: '!',
-  j: '_|',
-  k: '|<',
-  l: '|',
-  m: '|/|',
-  n: '||',
-  o: '0',
-  p: '|o',
-  q: 'O_',
-  r: '|2',
-  s: '5',
-  t: '7',
-  u: '|_|',
-  v: '/',
-  w: '|/|',
-  x: '%',
-  y: '`/',
-  z: '2',
+  A: 'a',
+  B: '8',
+  C: '<',
+  D: '|>',
+  E: '3',
+  F: '|=',
+  G: 'C-',
+  H: '4',
+  I: '1',
+  J: '7',
+  K: '|<',
+  L: '1',
+  M: '44',
+  N: '||',
+  O: '0',
+  P: '|>',
+  Q: '9',
+  R: '12',
+  S: '5',
+  T: '7',
+  U: '|_|',
+  V: '/',
+  W: '//',
+  X: '>K',
+  Y: '`/',
+  Z: '2',
 };
 
 /**
  * Array helper functions
  */
-const toUpperCase = (w) => w.toLowerCase();
+const toUpperCase = (w) => w.toUpperCase();
 
 const filterChar = (w) => w.length >= 2;
 
