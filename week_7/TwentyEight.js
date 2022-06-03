@@ -50,8 +50,14 @@ function* non_stop_words(filename) {
 
 function* count_and_sort(filename) {
   const freqs = {}
-  for (let w of non_stop_words(filename))
+  let i = 1;
+  for (let w of non_stop_words(filename)) {
     freqs[w] = (freqs[w] || 0) + 1
+    if (i % 5000 === 0) {
+      yield Object.entries(freqs).sort(([, a], [, b]) => b - a)
+    }
+    i++;
+  }
   yield Object.entries(freqs).sort(([, a], [, b]) => b - a)
 }
 
